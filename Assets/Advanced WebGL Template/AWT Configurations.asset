@@ -71,16 +71,16 @@ MonoBehaviour:
   _playPongButtonFontSize: 13px
   _watchVideoButtonYoutubeLink: https://www.youtube.com/watch?v=FIpZ1h7LEos
   _disableMobileWarning: 1
-  _targetPath: /Users/underpinmacgamedev/Documents/RouletteBuilds/Roulette26042024
+  _targetPath: /Users/underpinmacgamedev/Desktop/SlotsWebgl/Blackjack
   _s11: "\n    &&& title2019start &&&<title>%UNITY_WEB_NAME%</title>&&& title2019end
-    &&&\n    &&& title2020start &&&<title>Roulette</title>&&& title2020end &&&\n   
+    &&&\n    &&& title2020start &&&<title>Black Jack</title>&&& title2020end &&&\n   
     &&& UnityLoader1 &&& <script src=\"%UNITY_WEBGL_LOADER_URL%\"></script> &&& UnityLoader2
     &&&\n    "
   _s21: "\n            applicationInstance = UnityLoader.instantiate(\"gameContainer\",
     \"%UNITY_WEBGL_BUILD_URL%\", {onProgress: UnityProgress});\n            "
-  _s31: "\n    var buildUrl = \"Build\";\n    var loaderUrl = buildUrl + \"/Roulette26042024.loader.js\";\n   
-    var config = {\n        dataUrl: buildUrl + \"/Roulette26042024.data.unityweb\",\n       
-    frameworkUrl: buildUrl + \"/Roulette26042024.framework.js.unityweb\",\n       
-    codeUrl: buildUrl + \"/Roulette26042024.wasm.unityweb\",\n        streamingAssetsUrl:
-    \"StreamingAssets\",\n        companyName: \"DefaultCompany\",\n        productName:
-    \"Roulette\",\n        productVersion: \"1.0\",\n    };\n"
+  _s31: "\n    var buildUrl = \"Build\";\n    var loaderUrl = buildUrl + \"/Blackjack.loader.js\";\n   
+    var config = {\n        dataUrl: buildUrl + \"/Blackjack.data.unityweb\",\n       
+    frameworkUrl: buildUrl + \"/Blackjack.framework.js.unityweb\",\n        codeUrl:
+    buildUrl + \"/Blackjack.wasm.unityweb\",\n        streamingAssetsUrl: \"StreamingAssets\",\n       
+    companyName: \"DefaultCompany\",\n        productName: \"Black Jack\",\n       
+    productVersion: \"1.0\",\n    };\n"
