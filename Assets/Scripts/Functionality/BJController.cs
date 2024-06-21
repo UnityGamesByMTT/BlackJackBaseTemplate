@@ -101,6 +101,7 @@ public class BJController : MonoBehaviour
 
     private void Start()
     {
+        Application.ExternalCall("window.parent.postMessage", "OnEnter", "*");
         if (activeCoins_Object[CoinCounter]) activeCoins_Object[CoinCounter].SetActive(true);
         if (FirstSplit_Transform) FirstSplit_Transform.gameObject.SetActive(false);
         if (SecondSplit_Transform) SecondSplit_Transform.gameObject.SetActive(false);

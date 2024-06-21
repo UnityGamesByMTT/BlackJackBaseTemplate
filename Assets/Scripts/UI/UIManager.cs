@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour
     private Button DoubleBet_Button;
     [SerializeField]
     private Button MainBet_Button;
+    [SerializeField]
+    private Button Quit_Button;
 
     [Header("Middle Buttons")]
     [SerializeField]
@@ -113,8 +115,16 @@ public class UIManager : MonoBehaviour
         if (Split_Button) Split_Button.onClick.RemoveAllListeners();
         if (Split_Button) Split_Button.onClick.AddListener(OnSplit);
 
+        if (Quit_Button) Quit_Button.onClick.RemoveAllListeners();
+        if (Quit_Button) Quit_Button.onClick.AddListener(CallOnExitFunction);
+
         if (Split_object) Split_object.SetActive(false);
         if (MiddleDouble_object) MiddleDouble_object.SetActive(true);
+    }
+
+    private void CallOnExitFunction()
+    {
+        Application.ExternalCall("window.parent.postMessage", "onExit", "*");
     }
 
     private void OnBet()
